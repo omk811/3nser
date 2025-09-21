@@ -6,183 +6,173 @@
     <title>عناصر النص السردي - الصف الخامس</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* استيراد خط Baloo Bhaijaan 2 بدلاً من Amiri */
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        
         body {
-            /* استخدام الخط الجديد */
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            font-family: 'Amiri', serif;
         }
+        
         .element-card {
             transition: all 0.3s ease;
             cursor: pointer;
         }
+        
         .element-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
+        
         .story-text {
             background: linear-gradient(135deg, #fef7cd 0%, #fef3c7 100%);
             border-right: 4px solid #f59e0b;
         }
+        
         .highlight {
             background-color: #fbbf24;
             padding: 2px 4px;
             border-radius: 4px;
             font-weight: bold;
         }
+        
         .animate-bounce-slow {
             animation: bounce 2s infinite;
         }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        
         .fade-in {
             animation: fadeIn 0.6s ease-out;
-        }
-        /* تحسينات للاستجابة */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        /* تحسينات للشاشات الصغيرة */
-        @media (max-width: 768px) {
-            .header-title {
-                font-size: 1.8rem !important;
-            }
-            .header-subtitle {
-                font-size: 1rem !important;
-            }
-            .section-title {
-                font-size: 1.5rem !important;
-            }
-            .element-card {
-                margin-bottom: 15px;
-            }
-            .pyramid-container {
-                overflow-x: auto;
-            }
-            .quiz-option {
-                padding: 10px !important;
-                font-size: 0.9rem;
-            }
-        }
-        /* تحسينات للشاشات الصغيرة جدًا */
-        @media (max-width: 480px) {
-            .header-title {
-                font-size: 1.5rem !important;
-            }
-            .section-title {
-                font-size: 1.3rem !important;
-            }
-            .story-text p {
-                font-size: 0.9rem !important;
-            }
-            button {
-                padding: 8px 16px !important;
-                font-size: 0.9rem;
-            }
-        }
-        /* تحسينات لشاشات متوسطة */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .header-title {
-                font-size: 2.2rem !important;
-            }
-            .section-title {
-                font-size: 1.7rem !important;
-            }
-        }
-        /* تحسينات لشاشات كبيرة */
-        @media (min-width: 1025px) {
-            .container {
-                padding: 0 20px;
-            }
-        }
-        /* تحسينات للرموز التعبيرية على الجوال */
-        .emoji {
-            display: inline-block;
-            font-size: inherit;
-            vertical-align: middle;
         }
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-6 md:py-8 text-center">
-        <h1 class="text-3xl md:text-4xl font-bold mb-2 header-title">🏰 عناصر النص السردي 📚</h1>
-        <!-- إضافة الصورة الرمزية -->
-        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhT6Nzi6UMNnQCjrULUwBUTPYo0WaiM4u8Gm_GnttZNPz_qzKKO9E012PFKkO2IUHEPmyAGz0V767O2OjyuBkjb8x7VsiS9pyU8ugMKUNunqP1YrST0Fus-MicyJBAMCSVqbbTm6Xhu5QRCi9QwROCpHJ-YkjQQTTtRjaSFlC4fXlBvR314CoKTaAx1XFQy=s1280" alt="صورة توضيحية للنص السردي" class="mx-auto my-4 rounded-xl shadow-lg w-32 h-32 md:w-40 md:h-40 object-cover border-4 border-white">
-        <p class="text-lg md:text-xl header-subtitle">للصف الخامس الابتدائي</p>
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 text-center">
+        <h1 class="text-4xl font-bold mb-2">🏰 عناصر النص السردي 📚</h1>
+        <p class="text-xl">للصف الخامس الابتدائي</p>
     </header>
-    <div class="container mx-auto px-3 md:px-4 py-6 md:py-8">
+
+    <div class="container mx-auto px-4 py-8">
         <!-- Introduction -->
-        <div class="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-6 md:mb-8 text-center">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 section-title">🌟 ما هو النص السردي؟</h2>
-            <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">🌟 ما هو النص السردي؟</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
                 النص السردي هو نص قصصي يتضمن أحداثاً متتابعة متكاملة، ويحتوي على عناصر مهمة تجعل القصة مشوقة ومفهومة
             </p>
         </div>
+
         <!-- Narrative Elements Section -->
-        <div class="bg-white rounded-xl shadow-lg p-5 md:p-8 mb-6 md:mb-8">
-            <h2 class="text-xl md:text-2xl font-bold text-center mb-5 md:mb-6 text-gray-800 section-title">🎭 عناصر النص السردي</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">🎭 عناصر النص السردي</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
                 <!-- البداية -->
-                <div class="element-card bg-white rounded-xl shadow-lg p-4 md:p-6 border-t-4 border-emerald-500" onclick="showNarrativeElement('beginning')">
-                    <div class="text-center mb-3 md:mb-4">
-                        <div class="text-4xl md:text-6xl mb-2">🌅</div>
-                        <h3 class="text-lg md:text-xl font-bold text-emerald-600">البداية</h3>
+                <div class="element-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-emerald-500" onclick="showNarrativeElement('beginning')">
+                    <div class="text-center mb-4">
+                        <div class="text-6xl mb-2">🌅</div>
+                        <h3 class="text-xl font-bold text-emerald-600">البداية</h3>
                     </div>
-                    <p class="text-gray-600 text-center text-sm md:text-base">تقديم الشخصيات والمكان والزمان</p>
+                    <p class="text-gray-600 text-center">تقديم الشخصيات والمكان والزمان</p>
                 </div>
+
                 <!-- التحول -->
-                <div class="element-card bg-white rounded-xl shadow-lg p-4 md:p-6 border-t-4 border-amber-500" onclick="showNarrativeElement('transformation')">
-                    <div class="text-center mb-3 md:mb-4">
-                        <div class="text-4xl md:text-6xl mb-2">🔄</div>
-                        <h3 class="text-lg md:text-xl font-bold text-amber-600">التحول</h3>
+                <div class="element-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-amber-500" onclick="showNarrativeElement('transformation')">
+                    <div class="text-center mb-4">
+                        <div class="text-6xl mb-2">🔄</div>
+                        <h3 class="text-xl font-bold text-amber-600">التحول</h3>
                     </div>
-                    <p class="text-gray-600 text-center text-sm md:text-base">المشكلة أو الصراع الرئيسي</p>
+                    <p class="text-gray-600 text-center">المشكلة أو الصراع الرئيسي</p>
                 </div>
+
                 <!-- النهاية -->
-                <div class="element-card bg-white rounded-xl shadow-lg p-4 md:p-6 border-t-4 border-rose-500" onclick="showNarrativeElement('ending')">
-                    <div class="text-center mb-3 md:mb-4">
-                        <div class="text-4xl md:text-6xl mb-2">🎯</div>
-                        <h3 class="text-lg md:text-xl font-bold text-rose-600">النهاية</h3>
+                <div class="element-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-rose-500" onclick="showNarrativeElement('ending')">
+                    <div class="text-center mb-4">
+                        <div class="text-6xl mb-2">🎯</div>
+                        <h3 class="text-xl font-bold text-rose-600">النهاية</h3>
                     </div>
-                    <p class="text-gray-600 text-center text-sm md:text-base">حل المشكلة والخاتمة</p>
+                    <p class="text-gray-600 text-center">حل المشكلة والخاتمة</p>
                 </div>
             </div>
         </div>
+
         <!-- Story Example Section -->
-        <div class="bg-white rounded-xl shadow-lg p-5 md:p-8 mb-6 md:mb-8">
-            <h2 class="text-xl md:text-2xl font-bold text-center mb-5 md:mb-6 text-gray-800 section-title">📖 المثال التوضيحي - قصة سامي الأرنب</h2>
-            <div class="story-text p-4 md:p-6 rounded-lg mb-5 md:mb-6">
-                <p class="text-base md:text-lg leading-relaxed text-gray-800">
-                    في <span class="highlight">يوم مشمس من أيام الربيع</span>، كان هناك <span class="highlight">أرنب صغير ذكي يُدعى سامي</span> يعيش في <span class="highlight">غابة جميلة</span> مليئة بالأشجار الخضراء والزهور الملونة.
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">📖 المثال التوضيحي - قصة سامي الأرنب</h2>
+            
+            <div class="story-text p-6 rounded-lg mb-6">
+                <p class="text-lg leading-relaxed text-gray-800">
+                    في <span class="element-time cursor-pointer transition-all duration-300 p-1 rounded">يوم مشمس من أيام الربيع</span>، كان هناك <span class="element-character cursor-pointer transition-all duration-300 p-1 rounded">أرنب صغير ذكي يُدعى سامي</span> يعيش في <span class="element-place cursor-pointer transition-all duration-300 p-1 rounded">غابة جميلة</span> مليئة بالأشجار الخضراء والزهور الملونة.
                 </p>
-                <p class="text-base md:text-lg leading-relaxed text-gray-800 mt-3 md:mt-4">
-                    خرج سامي من بيته للبحث عن <span class="highlight">الجزر اللذيذ</span>، ولكنه مشى كثيراً حتى <span class="highlight">ضل الطريق</span>. شعر سامي بالخوف الشديد و<span class="highlight">بدأ يبكي</span>.
+                <p class="text-lg leading-relaxed text-gray-800 mt-4">
+                    خرج سامي من بيته للبحث عن <span class="element-goal cursor-pointer transition-all duration-300 p-1 rounded">الجزر اللذيذ</span>، ولكنه مشى كثيراً حتى <span class="element-problem cursor-pointer transition-all duration-300 p-1 rounded">ضل الطريق</span>. شعر سامي بالخوف الشديد و<span class="element-climax cursor-pointer transition-all duration-300 p-1 rounded">بدأ يبكي</span>.
                 </p>
-                <p class="text-base md:text-lg leading-relaxed text-gray-800 mt-3 md:mt-4">
-                    فجأة، <span class="highlight">تذكر سامي نصيحة أمه</span>: "إذا ضللت الطريق، اتبع أثر أقدامك للعودة". فعل سامي ذلك و<span class="highlight">وجد طريقه إلى البيت بأمان</span>، وتعلم أن <span class="highlight">الذكاء والهدوء يحلان أي مشكلة</span>.
+                <p class="text-lg leading-relaxed text-gray-800 mt-4">
+                    فجأة، <span class="element-solution cursor-pointer transition-all duration-300 p-1 rounded">تذكر سامي نصيحة أمه</span>: "إذا ضللت الطريق، اتبع أثر أقدامك للعودة". فعل سامي ذلك و<span class="element-resolution cursor-pointer transition-all duration-300 p-1 rounded">وجد طريقه إلى البيت بأمان</span>، وتعلم أن <span class="element-lesson cursor-pointer transition-all duration-300 p-1 rounded">الذكاء والهدوء يحلان أي مشكلة</span>.
                 </p>
             </div>
-            <div class="text-center">
-                <button onclick="highlightElements()" class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-5 py-2 md:px-6 md:py-3 rounded-full font-bold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
-                    ✨ إبراز العناصر المهمة
+            
+            <!-- Legend for story elements -->
+            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                <h4 class="text-lg font-bold text-gray-700 mb-3 text-center">🎨 دليل الألوان</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-blue-400 rounded ml-2"></span>
+                        <span>🕐 الزمان</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-purple-400 rounded ml-2"></span>
+                        <span>👤 الشخصية</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-green-400 rounded ml-2"></span>
+                        <span>🏞️ المكان</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-yellow-400 rounded ml-2"></span>
+                        <span>🎯 الهدف</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-orange-400 rounded ml-2"></span>
+                        <span>⚠️ المشكلة</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-red-400 rounded ml-2"></span>
+                        <span>🔥 الذروة</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-teal-400 rounded ml-2"></span>
+                        <span>💡 الحل</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-4 h-4 bg-emerald-400 rounded ml-2"></span>
+                        <span>✅ النهاية</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center space-x-3">
+                <button onclick="highlightAllElements()" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+                    ✨ إبراز جميع العناصر
+                </button>
+                <button onclick="highlightByImportance()" class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-6 py-3 rounded-full font-bold hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105">
+                    📊 إبراز حسب الأهمية
+                </button>
+                <button onclick="resetHighlights()" class="bg-gray-500 text-white px-6 py-3 rounded-full font-bold hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                    🔄 إزالة الإبراز
                 </button>
             </div>
         </div>
+
         <!-- Plot Pyramid -->
-        <div class="bg-white rounded-xl shadow-lg p-5 md:p-8 mb-6 md:mb-8">
-            <h2 class="text-xl md:text-2xl font-bold text-center mb-5 md:mb-6 text-gray-800 section-title">📈 الهرم السردي - درجات الحبكة</h2>
-            <div class="relative max-w-4xl mx-auto pyramid-container">
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">📈 الهرم السردي - درجات الحبكة</h2>
+            
+            <div class="relative max-w-4xl mx-auto">
                 <!-- SVG Pyramid -->
-                <svg viewBox="0 0 800 500" class="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+                <svg viewBox="0 0 800 500" class="w-full h-auto">
                     <!-- Background gradient -->
                     <defs>
                         <linearGradient id="pyramidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -197,159 +187,331 @@
                             <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
                         </linearGradient>
                     </defs>
+                    
                     <!-- Pyramid background -->
                     <polygon points="50,450 400,50 750,450" fill="url(#pyramidGradient)" stroke="#0284c7" stroke-width="2" opacity="0.3"/>
+                    
                     <!-- Plot line -->
-                    <polyline points="50,450 200,350 300,250 400,50 500,150 600,250 750,400"
+                    <polyline points="50,450 200,350 300,250 400,50 500,150 600,250 750,400" 
                               fill="none" stroke="url(#lineGradient)" stroke-width="6" stroke-linecap="round"/>
+                    
                     <!-- Plot points -->
                     <!-- البداية الهادئة -->
                     <circle cx="50" cy="450" r="12" fill="#10b981" stroke="white" stroke-width="3"/>
                     <text x="50" y="480" text-anchor="middle" class="text-sm font-bold fill-emerald-600">البداية الهادئة</text>
+                    
                     <!-- ظهور المشكلة -->
                     <circle cx="200" cy="350" r="12" fill="#f59e0b" stroke="white" stroke-width="3"/>
                     <text x="200" y="380" text-anchor="middle" class="text-sm font-bold fill-amber-600">ظهور المشكلة</text>
+                    
                     <!-- تصاعد التوتر -->
                     <circle cx="300" cy="250" r="12" fill="#f97316" stroke="white" stroke-width="3"/>
                     <text x="300" y="280" text-anchor="middle" class="text-sm font-bold fill-orange-600">تصاعد التوتر</text>
+                    
                     <!-- الذروة - التحول الجذري -->
                     <circle cx="400" cy="50" r="15" fill="#ef4444" stroke="white" stroke-width="4"/>
                     <text x="400" y="30" text-anchor="middle" class="text-sm font-bold fill-red-600">الذروة</text>
                     <text x="400" y="15" text-anchor="middle" class="text-xs fill-red-500">(التحول الجذري)</text>
+                    
                     <!-- البحث عن الحل -->
                     <circle cx="500" cy="150" r="12" fill="#f59e0b" stroke="white" stroke-width="3"/>
                     <text x="500" y="180" text-anchor="middle" class="text-sm font-bold fill-amber-600">البحث عن الحل</text>
+                    
                     <!-- تطبيق الحل -->
                     <circle cx="600" cy="250" r="12" fill="#84cc16" stroke="white" stroke-width="3"/>
                     <text x="600" y="280" text-anchor="middle" class="text-sm font-bold fill-lime-600">تطبيق الحل</text>
+                    
                     <!-- النهاية الهادئة -->
                     <circle cx="750" cy="400" r="12" fill="#10b981" stroke="white" stroke-width="3"/>
                     <text x="750" y="430" text-anchor="middle" class="text-sm font-bold fill-emerald-600">النهاية الهادئة</text>
                 </svg>
+                
                 <!-- Story stages description -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mt-6 md:mt-8">
+                <div class="grid md:grid-cols-3 gap-4 mt-8">
                     <!-- البداية -->
-                    <div class="bg-emerald-50 p-3 md:p-4 rounded-lg border-r-4 border-emerald-500">
-                        <h4 class="font-bold text-emerald-700 mb-1 md:mb-2 text-sm md:text-base">🌅 البداية</h4>
-                        <p class="text-xs md:text-sm text-gray-700">سامي يعيش بسلام في الغابة الجميلة</p>
+                    <div class="bg-emerald-50 p-4 rounded-lg border-r-4 border-emerald-500">
+                        <h4 class="font-bold text-emerald-700 mb-2">🌅 البداية</h4>
+                        <p class="text-sm text-gray-700">سامي يعيش بسلام في الغابة الجميلة</p>
                     </div>
+                    
                     <!-- الوسط - التحول -->
-                    <div class="bg-red-50 p-3 md:p-4 rounded-lg border-r-4 border-red-500">
-                        <h4 class="font-bold text-red-700 mb-1 md:mb-2 text-sm md:text-base">🔥 الذروة - التحول</h4>
-                        <p class="text-xs md:text-sm text-gray-700">سامي يضل الطريق ويشعر بالخوف الشديد</p>
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-500">
+                        <h4 class="font-bold text-red-700 mb-2">🔥 الذروة - التحول</h4>
+                        <p class="text-sm text-gray-700">سامي يضل الطريق ويشعر بالخوف الشديد</p>
                     </div>
+                    
                     <!-- النهاية -->
-                    <div class="bg-emerald-50 p-3 md:p-4 rounded-lg border-r-4 border-emerald-500">
-                        <h4 class="font-bold text-emerald-700 mb-1 md:mb-2 text-sm md:text-base">🎯 النهاية</h4>
-                        <p class="text-xs md:text-sm text-gray-700">سامي يعود بأمان ويتعلم درساً مهماً</p>
+                    <div class="bg-emerald-50 p-4 rounded-lg border-r-4 border-emerald-500">
+                        <h4 class="font-bold text-emerald-700 mb-2">🎯 النهاية</h4>
+                        <p class="text-sm text-gray-700">سامي يعود بأمان ويتعلم درساً مهماً</p>
                     </div>
                 </div>
+                
                 <!-- Interactive buttons -->
-                <div class="text-center mt-4 md:mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                    <button onclick="animatePlotLine()" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-full font-bold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
+                <div class="text-center mt-6">
+                    <button onclick="animatePlotLine()" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full font-bold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 ml-4">
                         🎬 تتبع مسار القصة
                     </button>
-                    <button onclick="showPlotDetails()" class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-full font-bold hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
+                    <button onclick="showPlotDetails()" class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105">
                         📚 شرح تفصيلي
                     </button>
                 </div>
             </div>
         </div>
+
         <!-- Detailed Explanation Area -->
-        <div id="explanation-area" class="bg-white rounded-xl shadow-lg p-5 md:p-8 mb-6 md:mb-8 hidden">
+        <div id="explanation-area" class="bg-white rounded-xl shadow-lg p-8 mb-8 hidden">
             <div id="explanation-content"></div>
         </div>
+
         <!-- Interactive Quiz -->
-        <div class="bg-white rounded-xl shadow-lg p-5 md:p-8">
-            <h2 class="text-xl md:text-2xl font-bold text-center mb-5 md:mb-6 text-gray-800 section-title">🎯 اختبر معلوماتك</h2>
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">🎯 اختبر معلوماتك</h2>
+            
             <div id="quiz-container">
                 <!-- Question 1: Concept -->
-                <div class="quiz-question mb-6 md:mb-8 p-4 md:p-6 bg-blue-50 rounded-lg">
-                    <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-blue-700">السؤال الأول: المفهوم 🧠</h3>
-                    <p class="text-base md:text-lg mb-3 md:mb-4 font-semibold">ما هو العنصر الذي يمثل أعلى نقطة في الهرم السردي؟</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">البداية</button>
-                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">النهاية</button>
-                        <button onclick="checkAnswer(this, true, 1)" class="quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">التحول (الذروة)</button>
-                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">الشخصيات</button>
+                <div class="quiz-question mb-8 p-6 bg-blue-50 rounded-lg">
+                    <h3 class="text-lg font-bold mb-4 text-blue-700">السؤال الأول: المفهوم 🧠</h3>
+                    <p class="text-lg mb-4 font-semibold">ما هو العنصر الذي يمثل أعلى نقطة في الهرم السردي؟</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border">البداية</button>
+                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border">النهاية</button>
+                        <button onclick="checkAnswer(this, true, 1)" class="quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border">التحول (الذروة)</button>
+                        <button onclick="checkAnswer(this, false, 1)" class="quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border">الشخصيات</button>
                     </div>
                 </div>
+
                 <!-- Question 2: Application -->
-                <div class="quiz-question mb-6 md:mb-8 p-4 md:p-6 bg-green-50 rounded-lg">
-                    <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-green-700">السؤال الثاني: التطبيق 📝</h3>
-                    <p class="text-base md:text-lg mb-3 md:mb-4 font-semibold">في قصة سامي الأرنب، ما هو عنصر "الذروة"؟</p>
-                    <div class="grid grid-cols-1 gap-2 md:gap-3">
-                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">سامي يعيش في الغابة بسلام</button>
-                        <button onclick="checkAnswer(this, true, 2)" class="quiz-option bg-white hover:bg-green-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">سامي يضل الطريق ويبكي من الخوف</button>
-                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">سامي يتذكر نصيحة أمه</button>
-                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">سامي يعود إلى البيت بأمان</button>
+                <div class="quiz-question mb-8 p-6 bg-green-50 rounded-lg">
+                    <h3 class="text-lg font-bold mb-4 text-green-700">السؤال الثاني: التطبيق 📝</h3>
+                    <p class="text-lg mb-4 font-semibold">في قصة سامي الأرنب، ما هو عنصر "الذروة"؟</p>
+                    <div class="grid grid-cols-1 gap-3">
+                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-4 rounded-lg transition-colors border text-right">سامي يعيش في الغابة بسلام</button>
+                        <button onclick="checkAnswer(this, true, 2)" class="quiz-option bg-white hover:bg-green-100 p-4 rounded-lg transition-colors border text-right">سامي يضل الطريق ويبكي من الخوف</button>
+                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-4 rounded-lg transition-colors border text-right">سامي يتذكر نصيحة أمه</button>
+                        <button onclick="checkAnswer(this, false, 2)" class="quiz-option bg-white hover:bg-green-100 p-4 rounded-lg transition-colors border text-right">سامي يعود إلى البيت بأمان</button>
                     </div>
                 </div>
+
                 <!-- Question 3: Concept -->
-                <div class="quiz-question mb-6 md:mb-8 p-4 md:p-6 bg-purple-50 rounded-lg">
-                    <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-purple-700">السؤال الثالث: المفهوم 🎭</h3>
-                    <p class="text-base md:text-lg mb-3 md:mb-4 font-semibold">أي من العناصر التالية يُقدم في "البداية" من النص السردي؟</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <button onclick="checkAnswer(this, true, 3)" class="quiz-option bg-white hover:bg-purple-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">الشخصيات والمكان</button>
-                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">حل المشكلة</button>
-                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">الذروة</button>
-                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">الصراع الرئيسي</button>
+                <div class="quiz-question mb-8 p-6 bg-purple-50 rounded-lg">
+                    <h3 class="text-lg font-bold mb-4 text-purple-700">السؤال الثالث: المفهوم 🎭</h3>
+                    <p class="text-lg mb-4 font-semibold">أي من العناصر التالية يُقدم في "البداية" من النص السردي؟</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="checkAnswer(this, true, 3)" class="quiz-option bg-white hover:bg-purple-100 p-4 rounded-lg transition-colors border">الشخصيات والمكان</button>
+                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-4 rounded-lg transition-colors border">حل المشكلة</button>
+                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-4 rounded-lg transition-colors border">الذروة</button>
+                        <button onclick="checkAnswer(this, false, 3)" class="quiz-option bg-white hover:bg-purple-100 p-4 rounded-lg transition-colors border">الصراع الرئيسي</button>
                     </div>
                 </div>
+
                 <!-- Question 4: Application -->
-                <div class="quiz-question mb-6 md:mb-8 p-4 md:p-6 bg-orange-50 rounded-lg">
-                    <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-orange-700">السؤال الرابع: التطبيق 🔍</h3>
-                    <p class="text-base md:text-lg mb-3 md:mb-4 font-semibold">حسب الهرم السردي، أين تقع مرحلة "تذكر سامي لنصيحة أمه"؟</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">في البداية الهادئة</button>
-                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">في الذروة</button>
-                        <button onclick="checkAnswer(this, true, 4)" class="quiz-option bg-white hover:bg-orange-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">في البحث عن الحل</button>
-                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base">في النهاية الهادئة</button>
+                <div class="quiz-question mb-8 p-6 bg-orange-50 rounded-lg">
+                    <h3 class="text-lg font-bold mb-4 text-orange-700">السؤال الرابع: التطبيق 🔍</h3>
+                    <p class="text-lg mb-4 font-semibold">حسب الهرم السردي، أين تقع مرحلة "تذكر سامي لنصيحة أمه"؟</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-4 rounded-lg transition-colors border">في البداية الهادئة</button>
+                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-4 rounded-lg transition-colors border">في الذروة</button>
+                        <button onclick="checkAnswer(this, true, 4)" class="quiz-option bg-white hover:bg-orange-100 p-4 rounded-lg transition-colors border">في البحث عن الحل</button>
+                        <button onclick="checkAnswer(this, false, 4)" class="quiz-option bg-white hover:bg-orange-100 p-4 rounded-lg transition-colors border">في النهاية الهادئة</button>
                     </div>
                 </div>
+
                 <!-- Question 5: Concept -->
-                <div class="quiz-question mb-6 p-4 md:p-6 bg-red-50 rounded-lg">
-                    <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-red-700">السؤال الخامس: المفهوم 📈</h3>
-                    <p class="text-base md:text-lg mb-3 md:mb-4 font-semibold">ما الهدف من استخدام الهرم السردي؟</p>
-                    <div class="grid grid-cols-1 gap-2 md:gap-3">
-                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">لجعل القصة أطول</button>
-                        <button onclick="checkAnswer(this, true, 5)" class="quiz-option bg-white hover:bg-red-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">لتنظيم الأحداث وجعل القصة أكثر تشويقاً</button>
-                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">لإضافة شخصيات أكثر</button>
-                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base">لتغيير مكان القصة</button>
+                <div class="quiz-question mb-6 p-6 bg-red-50 rounded-lg">
+                    <h3 class="text-lg font-bold mb-4 text-red-700">السؤال الخامس: المفهوم 📈</h3>
+                    <p class="text-lg mb-4 font-semibold">ما الهدف من استخدام الهرم السردي؟</p>
+                    <div class="grid grid-cols-1 gap-3">
+                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-4 rounded-lg transition-colors border text-right">لجعل القصة أطول</button>
+                        <button onclick="checkAnswer(this, true, 5)" class="quiz-option bg-white hover:bg-red-100 p-4 rounded-lg transition-colors border text-right">لتنظيم الأحداث وجعل القصة أكثر تشويقاً</button>
+                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-4 rounded-lg transition-colors border text-right">لإضافة شخصيات أكثر</button>
+                        <button onclick="checkAnswer(this, false, 5)" class="quiz-option bg-white hover:bg-red-100 p-4 rounded-lg transition-colors border text-right">لتغيير مكان القصة</button>
                     </div>
                 </div>
+
                 <!-- Results Display -->
-                <div id="quiz-results" class="hidden mt-6 p-5 md:p-6 bg-gradient-to-r from-green-100 to-blue-100 rounded-lg text-center">
-                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">🎉 نتائج الاختبار</h3>
-                    <p id="score-display" class="text-lg md:text-xl mb-3 md:mb-4"></p>
-                    <button onclick="resetQuiz()" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 md:px-6 md:py-3 rounded-full font-bold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 text-sm md:text-base">
+                <div id="quiz-results" class="hidden mt-6 p-6 bg-gradient-to-r from-green-100 to-blue-100 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">🎉 نتائج الاختبار</h3>
+                    <p id="score-display" class="text-xl mb-4"></p>
+                    <button onclick="resetQuiz()" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full font-bold hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
                         🔄 إعادة الاختبار
                     </button>
                 </div>
             </div>
         </div>
+
+        <!-- Practical Training Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">🎨 تدريب تطبيقي - حلل القصة</h2>
+            
+            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-purple-700 mb-4">📚 قصة "نورا والفراشة الذهبية"</h3>
+                <div class="story-text bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-lg leading-relaxed text-gray-800 mb-4">
+                        في <span id="time-element" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">صباح يوم الجمعة المشرق</span>، كانت <span id="character-element" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">نورا الفتاة الصغيرة المحبة للطبيعة</span> تلعب في <span id="place-element" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">حديقة جدتها الواسعة</span>.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-800 mb-4">
+                        فجأة، <span id="problem-start" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">رأت فراشة ذهبية جميلة عالقة في شبكة عنكبوت</span>. حاولت نورا إنقاذها، لكن <span id="problem-peak" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">الشبكة كانت عالية جداً ولم تستطع الوصول إليها</span>. شعرت بالحزن الشديد وهي ترى الفراشة تكافح.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-800">
+                        <span id="solution-element" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">تذكرت نورا أن جدها علمها استخدام العصا الطويلة لقطف الثمار</span>. أحضرت العصا بحذر و<span id="ending-element" class="cursor-pointer hover:bg-yellow-200 transition-colors p-1 rounded">حررت الفراشة بنجاح. طارت الفراشة حولها كأنها تشكرها، وتعلمت نورا أن الصبر والتفكير يحلان أي مشكلة</span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Analysis -->
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <!-- Element Identification -->
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-blue-700 mb-4">🔍 حدد العناصر</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>الشخصية الرئيسية:</span>
+                            <button onclick="highlightElement('character-element')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600">إظهار</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>الزمان:</span>
+                            <button onclick="highlightElement('time-element')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600">إظهار</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>المكان:</span>
+                            <button onclick="highlightElement('place-element')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600">إظهار</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plot Analysis -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-green-700 mb-4">📈 تحليل الحبكة</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>بداية المشكلة:</span>
+                            <button onclick="highlightElement('problem-start')" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">إظهار</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>الذروة:</span>
+                            <button onclick="highlightElement('problem-peak')" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">إظهار</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>الحل:</span>
+                            <button onclick="highlightElement('solution-element')" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">إظهار</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <span>النهاية:</span>
+                            <button onclick="highlightElement('ending-element')" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">إظهار</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drag and Drop Activity -->
+            <div class="bg-yellow-50 p-6 rounded-lg mb-6">
+                <h4 class="text-lg font-bold text-yellow-700 mb-4">🎯 رتب الأحداث حسب الهرم السردي</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Events to drag -->
+                    <div>
+                        <h5 class="font-semibold mb-3 text-gray-700">الأحداث (اسحب وأفلت):</h5>
+                        <div id="events-container" class="space-y-2">
+                            <div class="event-item bg-white p-3 rounded-lg shadow cursor-move border-2 border-dashed border-gray-300 hover:border-blue-400 transition-colors" draggable="true" data-order="4">
+                                نورا تحرر الفراشة وتتعلم درساً
+                            </div>
+                            <div class="event-item bg-white p-3 rounded-lg shadow cursor-move border-2 border-dashed border-gray-300 hover:border-blue-400 transition-colors" draggable="true" data-order="1">
+                                نورا تلعب في حديقة جدتها
+                            </div>
+                            <div class="event-item bg-white p-3 rounded-lg shadow cursor-move border-2 border-dashed border-gray-300 hover:border-blue-400 transition-colors" draggable="true" data-order="3">
+                                نورا تتذكر نصيحة جدها
+                            </div>
+                            <div class="event-item bg-white p-3 rounded-lg shadow cursor-move border-2 border-dashed border-gray-300 hover:border-blue-400 transition-colors" draggable="true" data-order="2">
+                                الفراشة عالقة والشبكة عالية جداً
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drop zones -->
+                    <div>
+                        <h5 class="font-semibold mb-3 text-gray-700">الترتيب الصحيح:</h5>
+                        <div class="space-y-2">
+                            <div class="drop-zone bg-emerald-100 p-4 rounded-lg border-2 border-dashed border-emerald-400 min-h-[60px] flex items-center justify-center text-emerald-700" data-position="1">
+                                <span class="text-sm">1. البداية الهادئة</span>
+                            </div>
+                            <div class="drop-zone bg-red-100 p-4 rounded-lg border-2 border-dashed border-red-400 min-h-[60px] flex items-center justify-center text-red-700" data-position="2">
+                                <span class="text-sm">2. الذروة - المشكلة</span>
+                            </div>
+                            <div class="drop-zone bg-amber-100 p-4 rounded-lg border-2 border-dashed border-amber-400 min-h-[60px] flex items-center justify-center text-amber-700" data-position="3">
+                                <span class="text-sm">3. البحث عن الحل</span>
+                            </div>
+                            <div class="drop-zone bg-emerald-100 p-4 rounded-lg border-2 border-dashed border-emerald-400 min-h-[60px] flex items-center justify-center text-emerald-700" data-position="4">
+                                <span class="text-sm">4. النهاية السعيدة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button onclick="checkOrder()" class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-full font-bold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105">
+                        ✅ تحقق من الترتيب
+                    </button>
+                    <button onclick="resetOrder()" class="bg-gray-500 text-white px-6 py-3 rounded-full font-bold hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 mr-3">
+                        🔄 إعادة تعيين
+                    </button>
+                </div>
+                
+                <div id="order-result" class="hidden mt-4 p-4 rounded-lg text-center"></div>
+            </div>
+
+            <!-- Creative Writing Exercise -->
+            <div class="bg-purple-50 p-6 rounded-lg">
+                <h4 class="text-lg font-bold text-purple-700 mb-4">✍️ تدريب الكتابة الإبداعية</h4>
+                <p class="text-gray-700 mb-4">اكتب قصة قصيرة باستخدام العناصر التالية:</p>
+                
+                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                    <div class="bg-white p-3 rounded-lg text-center">
+                        <div class="text-2xl mb-2">👦</div>
+                        <strong>الشخصية:</strong> أحمد الطالب
+                    </div>
+                    <div class="bg-white p-3 rounded-lg text-center">
+                        <div class="text-2xl mb-2">🏫</div>
+                        <strong>المكان:</strong> المدرسة
+                    </div>
+                    <div class="bg-white p-3 rounded-lg text-center">
+                        <div class="text-2xl mb-2">📚</div>
+                        <strong>المشكلة:</strong> نسيان الكتاب
+                    </div>
+                </div>
+                
+                <textarea id="creative-writing" class="w-full h-32 p-4 border-2 border-purple-300 rounded-lg focus:border-purple-500 focus:outline-none" placeholder="اكتب قصتك هنا... تذكر أن تتضمن: البداية، التحول (المشكلة)، والنهاية"></textarea>
+                
+                <div class="text-center mt-4">
+                    <button onclick="analyzeStory()" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+                        🔍 حلل قصتي
+                    </button>
+                </div>
+                
+                <div id="story-analysis" class="hidden mt-4 p-4 bg-white rounded-lg"></div>
+            </div>
+        </div>
     </div>
+
     <script>
-        // جميع الدوال البرمجية تبقى كما هي بدون تغيير
         const narrativeElements = {
             beginning: {
                 title: "🌅 البداية",
                 color: "emerald",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-emerald-600 mb-3 md:mb-4">البداية في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-emerald-600 mb-4">البداية في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">مميزات البداية:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">مميزات البداية:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">👥</span> تقديم الشخصيات الرئيسية</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🏞️</span> وصف المكان والزمان</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🎯</span> تحديد الهدف أو الرغبة</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🌟</span> جذب انتباه القارئ</li>
                             </ul>
                         </div>
-                        <div class="bg-emerald-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-emerald-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">"في يوم مشمس من أيام الربيع، كان هناك أرنب صغير ذكي يُدعى سامي يعيش في غابة جميلة"</p>
+                        <div class="bg-emerald-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-emerald-700">في قصتنا:</h4>
+                            <p class="text-gray-700">"في يوم مشمس من أيام الربيع، كان هناك أرنب صغير ذكي يُدعى سامي يعيش في غابة جميلة"</p>
                         </div>
                     </div>
                 `
@@ -358,20 +520,20 @@
                 title: "🔄 التحول",
                 color: "amber",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-amber-600 mb-3 md:mb-4">التحول في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-amber-600 mb-4">التحول في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">مميزات التحول:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">مميزات التحول:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">⚡</span> ظهور المشكلة أو الصراع</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🎭</span> تطور الأحداث والتشويق</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">💭</span> اتخاذ القرارات المهمة</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🔥</span> ذروة الإثارة والتوتر</li>
                             </ul>
                         </div>
-                        <div class="bg-amber-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-amber-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">"خرج سامي للبحث عن الجزر اللذيذ، ولكنه ضل الطريق. بدأ يبكي خوفاً، ثم تذكر نصيحة أمه"</p>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-amber-700">في قصتنا:</h4>
+                            <p class="text-gray-700">"خرج سامي للبحث عن الجزر اللذيذ، ولكنه ضل الطريق. بدأ يبكي خوفاً، ثم تذكر نصيحة أمه"</p>
                         </div>
                     </div>
                 `
@@ -380,43 +542,44 @@
                 title: "🎯 النهاية",
                 color: "rose",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-rose-600 mb-3 md:mb-4">النهاية في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-rose-600 mb-4">النهاية في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">مميزات النهاية:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">مميزات النهاية:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">✅</span> حل المشكلة الرئيسية</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🎓</span> تعلم درس أو حكمة</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">😊</span> الشعور بالرضا والاكتمال</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🔚</span> إنهاء القصة بوضوح</li>
                             </ul>
                         </div>
-                        <div class="bg-rose-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-rose-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">"فعل سامي ذلك ووجد طريقه إلى البيت بأمان، وتعلم أن الذكاء والهدوء يحلان أي مشكلة"</p>
+                        <div class="bg-rose-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-rose-700">في قصتنا:</h4>
+                            <p class="text-gray-700">"فعل سامي ذلك ووجد طريقه إلى البيت بأمان، وتعلم أن الذكاء والهدوء يحلان أي مشكلة"</p>
                         </div>
                     </div>
                 `
             }
         };
+
         const elements = {
             characters: {
                 title: "👥 الشخصيات",
                 color: "red",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-red-600 mb-3 md:mb-4">الشخصيات في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-4">الشخصيات في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">أنواع الشخصيات:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">أنواع الشخصيات:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">⭐</span> الشخصية الرئيسية: البطل الأساسي</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">👤</span> الشخصيات الثانوية: تساعد في الأحداث</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">😈</span> الشخصية المعارضة: تخلق المشاكل</li>
                             </ul>
                         </div>
-                        <div class="bg-red-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-red-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">سامي الأرنب هو الشخصية الرئيسية، وأمه شخصية ثانوية مهمة</p>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-red-700">في قصتنا:</h4>
+                            <p class="text-gray-700">سامي الأرنب هو الشخصية الرئيسية، وأمه شخصية ثانوية مهمة</p>
                         </div>
                     </div>
                 `
@@ -425,28 +588,28 @@
                 title: "⚡ الأحداث",
                 color: "green",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-green-600 mb-3 md:mb-4">الأحداث في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">الأحداث في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">ترتيب الأحداث:</h4>
-                            <div class="space-y-2 md:space-y-3">
-                                <div class="flex items-center bg-green-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
-                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center ml-2 md:ml-3 font-bold text-xs md:text-sm">1</span>
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">ترتيب الأحداث:</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center bg-green-50 p-3 rounded-lg">
+                                    <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center ml-3 font-bold">1</span>
                                     <span>البداية: تقديم الشخصيات والمكان</span>
                                 </div>
-                                <div class="flex items-center bg-green-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
-                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center ml-2 md:ml-3 font-bold text-xs md:text-sm">2</span>
+                                <div class="flex items-center bg-green-50 p-3 rounded-lg">
+                                    <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center ml-3 font-bold">2</span>
                                     <span>الوسط: المشكلة أو التحدي</span>
                                 </div>
-                                <div class="flex items-center bg-green-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
-                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center ml-2 md:ml-3 font-bold text-xs md:text-sm">3</span>
+                                <div class="flex items-center bg-green-50 p-3 rounded-lg">
+                                    <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center ml-3 font-bold">3</span>
                                     <span>النهاية: حل المشكلة</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-green-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-green-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">خروج سامي للبحث عن الجزر، ضياعه، ثم عودته بذكاء</p>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-green-700">في قصتنا:</h4>
+                            <p class="text-gray-700">خروج سامي للبحث عن الجزر، ضياعه، ثم عودته بذكاء</p>
                         </div>
                     </div>
                 `
@@ -455,19 +618,19 @@
                 title: "🕐 الزمان",
                 color: "blue",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">الزمان في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">الزمان في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">أنواع الزمان:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">أنواع الزمان:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">🌅</span> زمان محدد: صباح، مساء، يوم معين</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">📅</span> فترة زمنية: الربيع، الصيف، الشتاء</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">⏰</span> زمان عام: قديماً، حديثاً</li>
                             </ul>
                         </div>
-                        <div class="bg-blue-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-blue-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">"يوم مشمس من أيام الربيع" - زمان محدد وجميل</p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-blue-700">في قصتنا:</h4>
+                            <p class="text-gray-700">"يوم مشمس من أيام الربيع" - زمان محدد وجميل</p>
                         </div>
                     </div>
                 `
@@ -476,19 +639,19 @@
                 title: "🏞️ المكان",
                 color: "purple",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-3 md:mb-4">المكان في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">المكان في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">أهمية المكان:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">أهمية المكان:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">🎭</span> يؤثر على الأحداث</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🎨</span> يخلق الجو العام للقصة</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">🗺️</span> يساعد القارئ على التخيل</li>
                             </ul>
                         </div>
-                        <div class="bg-purple-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-purple-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">"غابة جميلة مليئة بالأشجار والزهور" - مكان طبيعي جميل</p>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-purple-700">في قصتنا:</h4>
+                            <p class="text-gray-700">"غابة جميلة مليئة بالأشجار والزهور" - مكان طبيعي جميل</p>
                         </div>
                     </div>
                 `
@@ -497,19 +660,19 @@
                 title: "🗣️ الراوي",
                 color: "orange",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-orange-600 mb-3 md:mb-4">الراوي في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-orange-600 mb-4">الراوي في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">أنواع الراوي:</h4>
-                            <ul class="space-y-1 md:space-y-2 text-gray-700 text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">أنواع الراوي:</h4>
+                            <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center"><span class="text-2xl ml-2">👁️</span> راوي عليم: يعرف كل شيء</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">👤</span> راوي مشارك: جزء من القصة</li>
                                 <li class="flex items-center"><span class="text-2xl ml-2">📖</span> راوي محايد: يحكي فقط</li>
                             </ul>
                         </div>
-                        <div class="bg-orange-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-orange-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">الراوي عليم - يعرف مشاعر سامي وأفكاره</p>
+                        <div class="bg-orange-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-orange-700">في قصتنا:</h4>
+                            <p class="text-gray-700">الراوي عليم - يعرف مشاعر سامي وأفكاره</p>
                         </div>
                     </div>
                 `
@@ -518,70 +681,270 @@
                 title: "🧩 الحبكة",
                 color: "pink",
                 content: `
-                    <h3 class="text-xl md:text-2xl font-bold text-pink-600 mb-3 md:mb-4">الحبكة في النص السردي</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-bold text-pink-600 mb-4">الحبكة في النص السردي</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3 text-gray-800">عناصر الحبكة:</h4>
-                            <div class="space-y-2 md:space-y-3">
-                                <div class="bg-pink-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
+                            <h4 class="text-lg font-semibold mb-3 text-gray-800">عناصر الحبكة:</h4>
+                            <div class="space-y-3">
+                                <div class="bg-pink-50 p-3 rounded-lg">
                                     <span class="font-semibold text-pink-700">العقدة:</span> المشكلة الرئيسية
                                 </div>
-                                <div class="bg-pink-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
+                                <div class="bg-pink-50 p-3 rounded-lg">
                                     <span class="font-semibold text-pink-700">الصراع:</span> محاولة حل المشكلة
                                 </div>
-                                <div class="bg-pink-50 p-2 md:p-3 rounded-lg text-sm md:text-base">
+                                <div class="bg-pink-50 p-3 rounded-lg">
                                     <span class="font-semibold text-pink-700">الحل:</span> انتهاء المشكلة
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-pink-50 p-3 md:p-4 rounded-lg">
-                            <h4 class="font-semibold mb-1 md:mb-2 text-pink-700 text-sm md:text-base">في قصتنا:</h4>
-                            <p class="text-gray-700 text-sm md:text-base">العقدة: ضياع سامي، الحل: اتباع أثر الأقدام</p>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-pink-700">في قصتنا:</h4>
+                            <p class="text-gray-700">العقدة: ضياع سامي، الحل: اتباع أثر الأقدام</p>
                         </div>
                     </div>
                 `
             }
         };
+
         function showNarrativeElement(elementKey) {
             const element = narrativeElements[elementKey];
             const explanationArea = document.getElementById('explanation-area');
             const explanationContent = document.getElementById('explanation-content');
+            
             explanationContent.innerHTML = element.content;
             explanationArea.classList.remove('hidden');
             explanationArea.classList.add('fade-in');
+            
             // Scroll to explanation
             explanationArea.scrollIntoView({ behavior: 'smooth' });
         }
+
         function showElement(elementKey) {
             const element = elements[elementKey];
             const explanationArea = document.getElementById('explanation-area');
             const explanationContent = document.getElementById('explanation-content');
+            
             explanationContent.innerHTML = element.content;
             explanationArea.classList.remove('hidden');
             explanationArea.classList.add('fade-in');
+            
             // Scroll to explanation
             explanationArea.scrollIntoView({ behavior: 'smooth' });
         }
-        function highlightElements() {
-            const highlights = document.querySelectorAll('.highlight');
-            highlights.forEach((highlight, index) => {
-                setTimeout(() => {
-                    highlight.style.animation = 'pulse 1s ease-in-out';
-                    highlight.style.backgroundColor = '#fbbf24';
-                }, index * 200);
+
+        // Define colors for each story element
+        const elementColors = {
+            'element-time': '#60a5fa',      // Blue - الزمان
+            'element-character': '#a78bfa', // Purple - الشخصية  
+            'element-place': '#4ade80',     // Green - المكان
+            'element-goal': '#facc15',      // Yellow - الهدف
+            'element-problem': '#fb923c',   // Orange - المشكلة
+            'element-climax': '#f87171',    // Red - الذروة
+            'element-solution': '#2dd4bf',  // Teal - الحل
+            'element-resolution': '#34d399', // Emerald - النهاية
+            'element-lesson': '#10b981'     // Emerald - الدرس المستفاد
+        };
+
+        // Define importance levels (1 = most important, 5 = least important)
+        const elementImportance = {
+            'element-climax': 1,      // الذروة - أهم عنصر
+            'element-character': 2,   // الشخصية
+            'element-problem': 2,     // المشكلة
+            'element-solution': 3,    // الحل
+            'element-resolution': 3,  // النهاية
+            'element-place': 4,       // المكان
+            'element-time': 4,        // الزمان
+            'element-goal': 5,        // الهدف
+            'element-lesson': 5       // الدرس المستفاد
+        };
+
+        function highlightAllElements() {
+            Object.keys(elementColors).forEach((className, index) => {
+                const elements = document.querySelectorAll(`.${className}`);
+                elements.forEach(element => {
+                    setTimeout(() => {
+                        element.style.backgroundColor = elementColors[className];
+                        element.style.color = 'white';
+                        element.style.fontWeight = 'bold';
+                        element.style.transform = 'scale(1.05)';
+                        element.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
+                    }, index * 150);
+                });
             });
         }
+
+        function highlightByImportance() {
+            // Reset first
+            resetHighlights();
+            
+            // Group elements by importance level
+            const importanceLevels = {};
+            Object.keys(elementImportance).forEach(className => {
+                const level = elementImportance[className];
+                if (!importanceLevels[level]) importanceLevels[level] = [];
+                importanceLevels[level].push(className);
+            });
+
+            // Highlight by importance level with different intensities
+            Object.keys(importanceLevels).forEach(level => {
+                const delay = (level - 1) * 800; // More important elements appear first
+                const intensity = 6 - level; // Higher intensity for more important elements
+                
+                setTimeout(() => {
+                    importanceLevels[level].forEach(className => {
+                        const elements = document.querySelectorAll(`.${className}`);
+                        elements.forEach(element => {
+                            element.style.backgroundColor = elementColors[className];
+                            element.style.color = 'white';
+                            element.style.fontWeight = 'bold';
+                            element.style.transform = `scale(${1 + (intensity * 0.02)})`;
+                            element.style.boxShadow = `0 ${intensity}px ${intensity * 2}px rgba(0,0,0,0.${intensity})`;
+                            element.style.border = `${intensity}px solid rgba(255,255,255,0.5)`;
+                            
+                            // Add pulsing animation for most important elements
+                            if (level <= 2) {
+                                element.style.animation = 'pulse 1.5s ease-in-out infinite';
+                            }
+                            
+                            // Add importance indicator
+                            const indicator = document.createElement('span');
+                            indicator.className = 'importance-indicator';
+                            indicator.innerHTML = '★'.repeat(intensity);
+                            indicator.style.cssText = `
+                                position: absolute;
+                                top: -10px;
+                                right: -5px;
+                                font-size: 12px;
+                                color: #fbbf24;
+                                text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+                                z-index: 10;
+                            `;
+                            
+                            // Position relative for absolute positioning of indicator
+                            element.style.position = 'relative';
+                            element.appendChild(indicator);
+                        });
+                    });
+                }, delay);
+            });
+        }
+
+        function resetHighlights() {
+            // Reset all story elements
+            Object.keys(elementColors).forEach(className => {
+                const elements = document.querySelectorAll(`.${className}`);
+                elements.forEach(element => {
+                    element.style.backgroundColor = '';
+                    element.style.color = '';
+                    element.style.fontWeight = '';
+                    element.style.transform = '';
+                    element.style.boxShadow = '';
+                    element.style.border = '';
+                    element.style.animation = '';
+                    element.style.position = '';
+                    
+                    // Remove importance indicators
+                    const indicators = element.querySelectorAll('.importance-indicator');
+                    indicators.forEach(indicator => indicator.remove());
+                });
+            });
+        }
+
+        // Add click functionality to individual elements
+        document.addEventListener('DOMContentLoaded', function() {
+            Object.keys(elementColors).forEach(className => {
+                const elements = document.querySelectorAll(`.${className}`);
+                elements.forEach(element => {
+                    element.addEventListener('click', function() {
+                        // Reset all first
+                        resetHighlights();
+                        
+                        // Highlight clicked element
+                        this.style.backgroundColor = elementColors[className];
+                        this.style.color = 'white';
+                        this.style.fontWeight = 'bold';
+                        this.style.transform = 'scale(1.1)';
+                        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+                        this.style.border = '2px solid rgba(255,255,255,0.8)';
+                        
+                        // Show element info
+                        showElementInfo(className, this.textContent);
+                    });
+                });
+            });
+        });
+
+        function showElementInfo(className, text) {
+            const elementNames = {
+                'element-time': 'الزمان',
+                'element-character': 'الشخصية الرئيسية',
+                'element-place': 'المكان',
+                'element-goal': 'الهدف',
+                'element-problem': 'المشكلة',
+                'element-climax': 'الذروة',
+                'element-solution': 'الحل',
+                'element-resolution': 'النهاية',
+                'element-lesson': 'الدرس المستفاد'
+            };
+
+            const elementDescriptions = {
+                'element-time': 'يحدد متى وقعت أحداث القصة',
+                'element-character': 'الشخص الرئيسي الذي تدور حوله القصة',
+                'element-place': 'المكان الذي تحدث فيه القصة',
+                'element-goal': 'ما يريد البطل تحقيقه',
+                'element-problem': 'المشكلة التي تواجه البطل',
+                'element-climax': 'أهم لحظة في القصة - ذروة التوتر',
+                'element-solution': 'كيف فكر البطل في حل المشكلة',
+                'element-resolution': 'النتيجة النهائية للقصة',
+                'element-lesson': 'الحكمة أو الدرس المستفاد من القصة'
+            };
+
+            // Create or update info box
+            let infoBox = document.getElementById('element-info-box');
+            if (!infoBox) {
+                infoBox = document.createElement('div');
+                infoBox.id = 'element-info-box';
+                infoBox.className = 'fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border-2 z-50 max-w-sm';
+                document.body.appendChild(infoBox);
+            }
+
+            infoBox.innerHTML = `
+                <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-bold text-lg" style="color: ${elementColors[className]}">${elementNames[className]}</h4>
+                    <button onclick="document.getElementById('element-info-box').remove()" class="text-gray-500 hover:text-gray-700">✕</button>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">${elementDescriptions[className]}</p>
+                <div class="bg-gray-50 p-2 rounded text-sm">
+                    <strong>النص:</strong> "${text}"
+                </div>
+                <div class="mt-2 text-xs text-gray-500">
+                    مستوى الأهمية: ${'★'.repeat(6 - elementImportance[className])} (${6 - elementImportance[className]}/5)
+                </div>
+            `;
+
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                if (infoBox && infoBox.parentNode) {
+                    infoBox.remove();
+                }
+            }, 5000);
+        }
+
         let quizScore = 0;
         let answeredQuestions = new Set();
+
         function checkAnswer(button, isCorrect, questionNumber) {
             // Prevent multiple answers for the same question
             if (answeredQuestions.has(questionNumber)) {
                 return;
             }
+            
             answeredQuestions.add(questionNumber);
+            
             // Find all options for this question
             const questionDiv = button.closest('.quiz-question');
             const options = questionDiv.querySelectorAll('.quiz-option');
+            
             options.forEach(option => {
                 option.disabled = true;
                 if (option === button) {
@@ -598,6 +961,7 @@
                     option.innerHTML += ' ✅';
                 }
             });
+            
             // Check if all questions are answered
             if (answeredQuestions.size === 5) {
                 setTimeout(() => {
@@ -605,11 +969,14 @@
                 }, 1000);
             }
         }
+
         function showQuizResults() {
             const resultsDiv = document.getElementById('quiz-results');
             const scoreDisplay = document.getElementById('score-display');
+            
             let message = '';
             let emoji = '';
+            
             if (quizScore === 5) {
                 message = 'ممتاز! حصلت على الدرجة الكاملة!';
                 emoji = '🏆';
@@ -623,37 +990,43 @@
                 message = 'تحتاج إلى مراجعة المادة أكثر';
                 emoji = '📚';
             }
+            
             scoreDisplay.innerHTML = `${emoji} نتيجتك: ${quizScore}/5<br>${message}`;
             resultsDiv.classList.remove('hidden');
             resultsDiv.scrollIntoView({ behavior: 'smooth' });
         }
+
         function resetQuiz() {
             quizScore = 0;
             answeredQuestions.clear();
+            
             // Reset all quiz options
             const options = document.querySelectorAll('.quiz-option');
             options.forEach(option => {
                 option.disabled = false;
-                option.className = 'quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base';
+                option.className = 'quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border';
                 // Remove checkmarks and X marks
                 option.innerHTML = option.innerHTML.replace(/ ✅| ❌/g, '');
+                
                 // Reset specific hover colors for different questions
                 const questionDiv = option.closest('.quiz-question');
                 if (questionDiv.classList.contains('bg-blue-50')) {
-                    option.className = 'quiz-option bg-white hover:bg-blue-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base';
+                    option.className = 'quiz-option bg-white hover:bg-blue-100 p-4 rounded-lg transition-colors border';
                 } else if (questionDiv.classList.contains('bg-green-50')) {
-                    option.className = 'quiz-option bg-white hover:bg-green-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base';
+                    option.className = 'quiz-option bg-white hover:bg-green-100 p-4 rounded-lg transition-colors border text-right';
                 } else if (questionDiv.classList.contains('bg-purple-50')) {
-                    option.className = 'quiz-option bg-white hover:bg-purple-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base';
+                    option.className = 'quiz-option bg-white hover:bg-purple-100 p-4 rounded-lg transition-colors border';
                 } else if (questionDiv.classList.contains('bg-orange-50')) {
-                    option.className = 'quiz-option bg-white hover:bg-orange-100 p-3 md:p-4 rounded-lg transition-colors border text-sm md:text-base';
+                    option.className = 'quiz-option bg-white hover:bg-orange-100 p-4 rounded-lg transition-colors border';
                 } else if (questionDiv.classList.contains('bg-red-50')) {
-                    option.className = 'quiz-option bg-white hover:bg-red-100 p-3 md:p-4 rounded-lg transition-colors border text-right text-sm md:text-base';
+                    option.className = 'quiz-option bg-white hover:bg-red-100 p-4 rounded-lg transition-colors border text-right';
                 }
             });
+            
             // Hide results
             document.getElementById('quiz-results').classList.add('hidden');
         }
+
         function animatePlotLine() {
             const circles = document.querySelectorAll('circle');
             circles.forEach((circle, index) => {
@@ -666,44 +1039,53 @@
                 }, index * 500);
             });
         }
+
         function showPlotDetails() {
             const explanationArea = document.getElementById('explanation-area');
             const explanationContent = document.getElementById('explanation-content');
+            
             explanationContent.innerHTML = `
-                <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">📈 شرح تفصيلي للهرم السردي</h3>
-                <div class="space-y-4 md:space-y-6">
-                    <div class="bg-emerald-50 p-3 md:p-4 rounded-lg border-r-4 border-emerald-500">
-                        <h4 class="font-bold text-emerald-700 mb-1 md:mb-2 text-sm md:text-base">🌅 البداية الهادئة</h4>
-                        <p class="text-gray-700 text-sm md:text-base">تقديم سامي الأرنب في بيئته الطبيعية الآمنة. الجو هادئ ومريح، والقارئ يتعرف على الشخصية الرئيسية.</p>
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">📈 شرح تفصيلي للهرم السردي</h3>
+                <div class="space-y-6">
+                    <div class="bg-emerald-50 p-4 rounded-lg border-r-4 border-emerald-500">
+                        <h4 class="font-bold text-emerald-700 mb-2">🌅 البداية الهادئة</h4>
+                        <p class="text-gray-700">تقديم سامي الأرنب في بيئته الطبيعية الآمنة. الجو هادئ ومريح، والقارئ يتعرف على الشخصية الرئيسية.</p>
                     </div>
-                    <div class="bg-amber-50 p-3 md:p-4 rounded-lg border-r-4 border-amber-500">
-                        <h4 class="font-bold text-amber-700 mb-1 md:mb-2 text-sm md:text-base">⚠️ ظهور المشكلة</h4>
-                        <p class="text-gray-700 text-sm md:text-base">سامي يقرر الخروج للبحث عن الجزر. هنا تبدأ المشكلة في الظهور، والتوتر يزداد قليلاً.</p>
+                    
+                    <div class="bg-amber-50 p-4 rounded-lg border-r-4 border-amber-500">
+                        <h4 class="font-bold text-amber-700 mb-2">⚠️ ظهور المشكلة</h4>
+                        <p class="text-gray-700">سامي يقرر الخروج للبحث عن الجزر. هنا تبدأ المشكلة في الظهور، والتوتر يزداد قليلاً.</p>
                     </div>
-                    <div class="bg-orange-50 p-3 md:p-4 rounded-lg border-r-4 border-orange-500">
-                        <h4 class="font-bold text-orange-700 mb-1 md:mb-2 text-sm md:text-base">📈 تصاعد التوتر</h4>
-                        <p class="text-gray-700 text-sm md:text-base">سامي يضل الطريق ويبدأ في الشعور بالقلق. التوتر يزداد والقارئ يشعر بالقلق على سامي.</p>
+                    
+                    <div class="bg-orange-50 p-4 rounded-lg border-r-4 border-orange-500">
+                        <h4 class="font-bold text-orange-700 mb-2">📈 تصاعد التوتر</h4>
+                        <p class="text-gray-700">سامي يضل الطريق ويبدأ في الشعور بالقلق. التوتر يزداد والقارئ يشعر بالقلق على سامي.</p>
                     </div>
-                    <div class="bg-red-50 p-3 md:p-4 rounded-lg border-r-4 border-red-500">
-                        <h4 class="font-bold text-red-700 mb-1 md:mb-2 text-sm md:text-base">🔥 الذروة - التحول الجذري</h4>
-                        <p class="text-gray-700 text-sm md:text-base">أعلى نقطة في التوتر! سامي يشعر بالخوف الشديد ويبكي. هذه هي اللحظة الحاسمة في القصة.</p>
+                    
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-500">
+                        <h4 class="font-bold text-red-700 mb-2">🔥 الذروة - التحول الجذري</h4>
+                        <p class="text-gray-700">أعلى نقطة في التوتر! سامي يشعر بالخوف الشديد ويبكي. هذه هي اللحظة الحاسمة في القصة.</p>
                     </div>
-                    <div class="bg-amber-50 p-3 md:p-4 rounded-lg border-r-4 border-amber-500">
-                        <h4 class="font-bold text-amber-700 mb-1 md:mb-2 text-sm md:text-base">💡 البحث عن الحل</h4>
-                        <p class="text-gray-700 text-sm md:text-base">سامي يتذكر نصيحة أمه. التوتر يبدأ في الانخفاض والأمل يظهر في الأفق.</p>
+                    
+                    <div class="bg-amber-50 p-4 rounded-lg border-r-4 border-amber-500">
+                        <h4 class="font-bold text-amber-700 mb-2">💡 البحث عن الحل</h4>
+                        <p class="text-gray-700">سامي يتذكر نصيحة أمه. التوتر يبدأ في الانخفاض والأمل يظهر في الأفق.</p>
                     </div>
-                    <div class="bg-lime-50 p-3 md:p-4 rounded-lg border-r-4 border-lime-500">
-                        <h4 class="font-bold text-lime-700 mb-1 md:mb-2 text-sm md:text-base">✅ تطبيق الحل</h4>
-                        <p class="text-gray-700 text-sm md:text-base">سامي يتبع أثر أقدامه ويجد طريقه. المشكلة تُحل تدريجياً والراحة تعود.</p>
+                    
+                    <div class="bg-lime-50 p-4 rounded-lg border-r-4 border-lime-500">
+                        <h4 class="font-bold text-lime-700 mb-2">✅ تطبيق الحل</h4>
+                        <p class="text-gray-700">سامي يتبع أثر أقدامه ويجد طريقه. المشكلة تُحل تدريجياً والراحة تعود.</p>
                     </div>
-                    <div class="bg-emerald-50 p-3 md:p-4 rounded-lg border-r-4 border-emerald-500">
-                        <h4 class="font-bold text-emerald-700 mb-1 md:mb-2 text-sm md:text-base">🏠 النهاية الهادئة</h4>
-                        <p class="text-gray-700 text-sm md:text-base">سامي يعود إلى البيت بأمان ويتعلم درساً مهماً. الهدوء والسلام يعودان مرة أخرى.</p>
+                    
+                    <div class="bg-emerald-50 p-4 rounded-lg border-r-4 border-emerald-500">
+                        <h4 class="font-bold text-emerald-700 mb-2">🏠 النهاية الهادئة</h4>
+                        <p class="text-gray-700">سامي يعود إلى البيت بأمان ويتعلم درساً مهماً. الهدوء والسلام يعودان مرة أخرى.</p>
                     </div>
                 </div>
-                <div class="mt-4 md:mt-6 p-3 md:p-4 bg-blue-50 rounded-lg">
-                    <h4 class="font-bold text-blue-700 mb-1 md:mb-2 text-sm md:text-base">🎯 الهدف من الهرم السردي:</h4>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm md:text-base">
+                
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-bold text-blue-700 mb-2">🎯 الهدف من الهرم السردي:</h4>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
                         <li>يساعد في فهم تطور الأحداث في القصة</li>
                         <li>يوضح كيف تتصاعد المشاكل وتُحل</li>
                         <li>يجعل القصة أكثر إثارة وتشويقاً</li>
@@ -711,10 +1093,238 @@
                     </ul>
                 </div>
             `;
+            
             explanationArea.classList.remove('hidden');
             explanationArea.classList.add('fade-in');
             explanationArea.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Highlight specific elements in the training story
+        function highlightElement(elementId) {
+            // Reset all highlights
+            const allElements = document.querySelectorAll('[id$="-element"], [id^="problem-"], [id^="solution-"], [id^="ending-"]');
+            allElements.forEach(el => {
+                el.style.backgroundColor = '';
+                el.style.transform = '';
+            });
+            
+            // Highlight the selected element
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.style.backgroundColor = '#fbbf24';
+                element.style.transform = 'scale(1.05)';
+                element.style.transition = 'all 0.3s ease';
+                
+                // Remove highlight after 3 seconds
+                setTimeout(() => {
+                    element.style.backgroundColor = '';
+                    element.style.transform = '';
+                }, 3000);
+            }
+        }
+
+        // Drag and Drop functionality
+        let draggedElement = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const eventItems = document.querySelectorAll('.event-item');
+            const dropZones = document.querySelectorAll('.drop-zone');
+
+            // Add drag event listeners
+            eventItems.forEach(item => {
+                item.addEventListener('dragstart', function(e) {
+                    draggedElement = this;
+                    this.style.opacity = '0.5';
+                });
+
+                item.addEventListener('dragend', function(e) {
+                    this.style.opacity = '1';
+                });
+            });
+
+            // Add drop event listeners
+            dropZones.forEach(zone => {
+                zone.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.backgroundColor = '#e5e7eb';
+                });
+
+                zone.addEventListener('dragleave', function(e) {
+                    this.style.backgroundColor = '';
+                });
+
+                zone.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.style.backgroundColor = '';
+                    
+                    if (draggedElement) {
+                        // Clear the zone first
+                        const existingEvent = this.querySelector('.event-item');
+                        if (existingEvent) {
+                            document.getElementById('events-container').appendChild(existingEvent);
+                        }
+                        
+                        // Add the dragged element
+                        this.appendChild(draggedElement);
+                        draggedElement = null;
+                    }
+                });
+            });
+        });
+
+        function checkOrder() {
+            const dropZones = document.querySelectorAll('.drop-zone');
+            let correctCount = 0;
+            let totalZones = 0;
+
+            dropZones.forEach(zone => {
+                const eventItem = zone.querySelector('.event-item');
+                if (eventItem) {
+                    totalZones++;
+                    const expectedOrder = zone.getAttribute('data-position');
+                    const actualOrder = eventItem.getAttribute('data-order');
+                    
+                    if (expectedOrder === actualOrder) {
+                        correctCount++;
+                        zone.style.borderColor = '#10b981';
+                        zone.style.backgroundColor = '#d1fae5';
+                    } else {
+                        zone.style.borderColor = '#ef4444';
+                        zone.style.backgroundColor = '#fee2e2';
+                    }
+                }
+            });
+
+            const resultDiv = document.getElementById('order-result');
+            resultDiv.classList.remove('hidden');
+            
+            if (correctCount === 4 && totalZones === 4) {
+                resultDiv.innerHTML = `
+                    <div class="bg-green-100 text-green-800 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">🎉 ممتاز!</h4>
+                        <p>رتبت جميع الأحداث بشكل صحيح حسب الهرم السردي!</p>
+                    </div>
+                `;
+            } else {
+                resultDiv.innerHTML = `
+                    <div class="bg-yellow-100 text-yellow-800 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">🤔 حاول مرة أخرى</h4>
+                        <p>رتبت ${correctCount} من ${totalZones} أحداث بشكل صحيح. راجع الهرم السردي وحاول مرة أخرى!</p>
+                    </div>
+                `;
+            }
+        }
+
+        function resetOrder() {
+            // Move all events back to the container
+            const eventItems = document.querySelectorAll('.event-item');
+            const eventsContainer = document.getElementById('events-container');
+            
+            eventItems.forEach(item => {
+                eventsContainer.appendChild(item);
+            });
+
+            // Reset drop zone styles
+            const dropZones = document.querySelectorAll('.drop-zone');
+            dropZones.forEach(zone => {
+                zone.style.borderColor = '';
+                zone.style.backgroundColor = '';
+            });
+
+            // Hide result
+            document.getElementById('order-result').classList.add('hidden');
+        }
+
+        function analyzeStory() {
+            const storyText = document.getElementById('creative-writing').value.trim();
+            const analysisDiv = document.getElementById('story-analysis');
+            
+            if (!storyText) {
+                analysisDiv.innerHTML = `
+                    <div class="bg-red-100 text-red-800 p-4 rounded-lg">
+                        <p>⚠️ يرجى كتابة قصة أولاً!</p>
+                    </div>
+                `;
+                analysisDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Simple analysis based on keywords and structure
+            let analysis = {
+                hasBeginning: false,
+                hasProblem: false,
+                hasSolution: false,
+                hasEnding: false,
+                hasCharacter: false,
+                hasPlace: false
+            };
+
+            const text = storyText.toLowerCase();
+            
+            // Check for story elements
+            if (text.includes('أحمد') || text.includes('الطالب')) analysis.hasCharacter = true;
+            if (text.includes('مدرسة') || text.includes('فصل') || text.includes('صف')) analysis.hasPlace = true;
+            if (text.includes('نسي') || text.includes('نسى') || text.includes('كتاب')) analysis.hasProblem = true;
+            if (text.includes('حل') || text.includes('وجد') || text.includes('تذكر') || text.includes('ساعد')) analysis.hasSolution = true;
+            
+            // Check for story structure indicators
+            if (text.includes('كان') || text.includes('في يوم') || text.includes('ذات مرة')) analysis.hasBeginning = true;
+            if (text.includes('أخيراً') || text.includes('في النهاية') || text.includes('تعلم') || text.includes('وهكذا')) analysis.hasEnding = true;
+
+            let score = Object.values(analysis).filter(Boolean).length;
+            let feedback = [];
+
+            if (analysis.hasCharacter) feedback.push('✅ تم تحديد الشخصية الرئيسية');
+            else feedback.push('❌ لم يتم ذكر الشخصية الرئيسية (أحمد)');
+
+            if (analysis.hasPlace) feedback.push('✅ تم تحديد المكان');
+            else feedback.push('❌ لم يتم ذكر المكان (المدرسة)');
+
+            if (analysis.hasBeginning) feedback.push('✅ توجد بداية واضحة للقصة');
+            else feedback.push('❌ البداية غير واضحة');
+
+            if (analysis.hasProblem) feedback.push('✅ تم عرض المشكلة');
+            else feedback.push('❌ لم يتم عرض المشكلة بوضوح');
+
+            if (analysis.hasSolution) feedback.push('✅ تم تقديم حل للمشكلة');
+            else feedback.push('❌ لم يتم تقديم حل واضح');
+
+            if (analysis.hasEnding) feedback.push('✅ توجد نهاية مناسبة');
+            else feedback.push('❌ النهاية غير واضحة');
+
+            let color = 'red';
+            let message = 'تحتاج إلى تطوير القصة أكثر';
+            
+            if (score >= 5) {
+                color = 'green';
+                message = 'قصة ممتازة! تحتوي على جميع العناصر المطلوبة';
+            } else if (score >= 3) {
+                color = 'yellow';
+                message = 'قصة جيدة، لكن يمكن تحسينها';
+            }
+
+            analysisDiv.innerHTML = `
+                <div class="bg-${color}-100 text-${color}-800 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg mb-3">📊 تحليل قصتك</h4>
+                    <p class="mb-3"><strong>النتيجة:</strong> ${score}/6 - ${message}</p>
+                    <ul class="space-y-1 text-sm">
+                        ${feedback.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                    <div class="mt-3 p-3 bg-white rounded border">
+                        <strong>💡 نصائح للتحسين:</strong>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li>• تأكد من وجود بداية واضحة تقدم الشخصية والمكان</li>
+                            <li>• اعرض المشكلة (نسيان الكتاب) بوضوح</li>
+                            <li>• قدم حلاً منطقياً للمشكلة</li>
+                            <li>• اختتم القصة بنهاية مناسبة ودرس مفيد</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+            
+            analysisDiv.classList.remove('hidden');
+        }
+
         // Add hover effects to story highlights
         document.addEventListener('DOMContentLoaded', function() {
             const highlights = document.querySelectorAll('.highlight');
@@ -723,11 +1333,12 @@
                     this.style.transform = 'scale(1.05)';
                     this.style.transition = 'all 0.2s ease';
                 });
+                
                 highlight.addEventListener('mouseleave', function() {
                     this.style.transform = 'scale(1)';
                 });
             });
         });
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9827f18dc2a01274',t:'MTc1ODQ0MDczMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
